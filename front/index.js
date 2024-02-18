@@ -24,6 +24,12 @@ app.get('/reg', (req, res) => {
 app.get('/aboutUs', (req, res) => {
     res.sendFile(path.join(__dirname,'aboutUs.html'));
 });
+app.get('/profile', (req, res) => {
+    res.sendFile(path.join(__dirname,'profile.html'));
+});
+app.get('/adminPage', (req, res) => {
+    res.sendFile(path.join(__dirname,'adminPage.html'));
+});
 
 app.post('/login', (req, res)=>{
     

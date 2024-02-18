@@ -25,10 +25,23 @@
                     <button id="aboutUs" class="nav-link">О нас</button>
                 </form>
             </li>
-            <li class="nav-item">
+            <li id="loginPage" class="nav-item">
                 <form method="get" action="/login">
                     <button id="login" class="mx-2 btn btn-outline-success">Войти</button>
                 </form>
+            </li>
+            <li id="profilePage" class="nav-item" style="display: none;">
+                <form method="get" action="/profile">
+                    <button id="profile" class="nav-link">Профиль</button>
+                </form>
+            </li>
+            <li id="adminPageNav" class="nav-item" style="display: none;">
+                <form method="get" action="/adminPage">
+                    <button id="adminPage" class="nav-link">Админ</button>
+                </form>
+            </li>
+            <li id="logoutPage" class="nav-item" style="display: none;">
+                <button class="mx-2 btn btn-outline-danger" id="logout" onclick="logout()">Выйти</button>
             </li>
           </ul>
     </nav>
