@@ -2,8 +2,7 @@ const express = require('express');
 const bodyParser = require('body-parser');
 
 const app = express();
-const port = 3000;
-
+const port = 3001;
 app.use(bodyParser.json());
 
 const path = require('path');
@@ -39,8 +38,7 @@ app.post('/reg', (req, res)=>{
 
 })
 
-app.get('/getProverbs', (req, res)=>{
-
+app.get('/isLogin', (req, res)=>{
 })
 app.listen(port, () => {
     console.log(`Server is running on port ${port}`);
